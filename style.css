@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100;
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+
+#stickyElement{
+    padding: 80px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
