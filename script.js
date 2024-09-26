@@ -15,7 +15,7 @@ const rotate = (e) => {
     const angle = Math.atan2(e.y, e.x)
     gsap.to(cursor, {
         rotate: `${angle}rad`,
-        duration: 0.1
+        duration: 0
     });
 }
 
